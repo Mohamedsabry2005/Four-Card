@@ -1,0 +1,99 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;600&display=swap');
+
+:root {
+    --Red: hsl(0, 78%, 62%);
+    --Cyan: hsl(180, 62%, 55%);
+    --Orange: hsl(34, 97%, 64%);
+    --Blue: hsl(212, 86%, 64%);
+
+    --Very-Dark-Blue: hsl(234, 12%, 34%);
+    --Grayish-Blue: hsl(229, 6%, 66%);
+    --Very-Light-Gray: hsl(0, 0%, 98%);
+}
+
+* {
+    font-family: 'Poppins', sans-serif;
+    font-size: 15px;
+}
+body {
+    background-color: var(--Very-Light-Gray);
+    margin: 0;
+    padding: 0;
+}
+.container {
+    margin: 25px;
+}
+/* start main */
+
+.main .container {
+    text-align: center;
+    color: var(--Grayish-Blue);
+    margin: 50px auto;
+}
+.main .container h1.dark {
+    color: var(--Very-Dark-Blue);
+    margin: 25px;
+}
+.main .container h1.light {
+    margin: 15px 0;
+}
+/* end main */
+
+/* start hero */
+div.hero div.container div  {
+    background-color:white;
+    margin:10px auto;
+    border-radius: 5px;
+    box-shadow: 0 5px 10px 0px var(--Grayish-Blue);
+    max-width: 320px;
+    max-height: 230px;
+}
+
+div.hero div.container div img  {
+    display: block;
+    margin: 30px 10px 20px auto;
+    padding: 20px;
+}
+div.hero div.container div p {
+    padding: 0 20px;
+    color: var(--Grayish-Blue);
+}
+div.hero div.container div>p.bold {
+    font-weight:bolder;
+    font-size: 20px;
+    color: var(--Very-Dark-Blue);
+}
+div.hero div.container div.supervisor{
+    border-top: 4px solid var(--Cyan);
+}
+div.hero div.container div.teamBuilder{
+    border-top: 4px solid var(--Red);
+}
+div.hero div.container div.karma{
+    border-top: 4px solid var(--Orange);
+}
+div.hero div.container div.calculator{
+    border-top: 4px solid var(--Blue);
+}
+
+
+
+@media only screen and (min-width: 1440px) {
+
+    div.hero div.container {
+        flex-direction: column;
+        display: flex;
+    }
+    div.hero div.container div.supervisor {
+        top: 133px;
+        position: relative;
+        right: 355px;
+        margin-bottom: -250px;
+    }
+    div.hero div.container div.calculator {
+        top: -370px;
+        position: relative;
+        right: -355px;
+        margin-bottom: -370px;
+    }
+}
